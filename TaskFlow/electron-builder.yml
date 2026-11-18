@@ -1,0 +1,26 @@
+appId: com.furqan.taskflow
+productName: TaskFlow
+copyright: Copyright © 2026 Mr. Furqan
+directories:
+  output: release
+  buildResources: build
+files:
+  - dist/**/*
+  - electron/**/*
+  - package.json
+asar: true
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+  icon: build/icon.ico
+  artifactName: TaskFlow-Setup.exe
+nsis:
+  oneClick: true            # double-click -> installs immediately, like a normal app
+  perMachine: false         # no admin rights needed
+  allowToChangeInstallationDirectory: false
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: TaskFlow
+  runAfterFinish: true
+  deleteAppDataOnUninstall: false

@@ -1,0 +1,8 @@
+{
+  "name": "TaskFlow — Smart To-Do List",
+  "description": "A modern, accessible, and responsive personal task manager with priority tracking, due date monitoring, search, filtering, and local persistence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
